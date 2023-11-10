@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace a2.Controllers
+{
+    public class HomeController : Controller
+    {
+        public ActionResult Index()
+        {
+            return View();
+        }
+        public ActionResult destinations()
+        {
+            return View();
+        }
+        public ActionResult second()
+        {
+            return View();
+        }
+
+        public ActionResult third()
+        {
+           
+            return View();
+        }
+
+        public ActionResult tips()
+        {
+
+            return View();
+        }
+    }
+}

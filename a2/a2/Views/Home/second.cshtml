@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+@{
+    Layout = null;
+}
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/css/second.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                <li><a href="@Url.Action("destinations", "Home")">destinations</a></li>
+                <li><a href="@Url.Action("tips", "Home")">tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Introduction of world famous scenic spots</h2>
+            <p>You can know your desired tourist destination according to the description.</p>
+        </section>
+
+        <section>
+            <h2>Featured Content</h2>
+            <div class="content-item">
+                <img src="~/img/R-C (4).jpg" alt="Image 1">
+                <h3>Content 1</h3>
+                <p>
+                    The Eiffel Tower is in Paris. It's the symbol of Paris.Nobody will miss the chance to visit it when he arrives in Paris.It's 300.51 meters in height. It is made of iron and it is about 700 tons in weight.
+                    There're 1665 steps to the top. It took 300 workers 2 years to complete it. It was finished in 1889. It's a famous architecture in the world.
+                </p>
+            </div>
+            <div class="content-item">
+                <img src="~/img/R-C (3).jpg" alt="Image 2">
+                <h3>Content 2</h3>
+                <p>Copenhagen, the capital of the Kingdom of Denmark, is known for its beautiful and tidy cityscape, where modern industrial enterprises coexist with medieval buildings, giving the city a blend of modernity and historical charm. It is a world-renowned historical and cultural city. The iconic Little Mermaid statue sits by the sea, exuding a fairy-tale atmosphere, while ancient castles and palaces are nestled alongside the city, creating a mix of antiquity, magic, art, and modernity.</p>
+            </div>
+        </section>
+        <div style="display: flex; justify-content: center;">
+            <section>
+                <h2>Search</h2>
+                <div style="display: flex; justify-content: center;">
+                    <form id="query-form" action="search.php" method="GET">
+                        <input type="text" name="query" placeholder="Search...">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </section>
+
+            <section>
+                <h2>Pagination</h2>
+                <div class="pagination" style="display: flex; justify-content: center;">
+                    <a href="destinations">&laquo; Previous</a>
+                    <a class="active page-link" href="destinations">1</a>
+                    <a href="second">2</a>
+                    <a href="third">3</a>
+                    <a href="third">Next &raquo;</a>
+                </div>
+            </section>
+        </div>
+    </main>
+        <footer>
+            <p>Contact us: <a href="mailto:info@traveladventure.com">info@traveladventure.com</a></p>
+            <p><a href="https://validator.w3.org/docs/users.html#Calling">https://validator.w3.org/docs/users.html#Calling</a>, <a href="https://jigsaw.w3.org/css-validator/manual.html">https://jigsaw.w3.org/css-validator/manual.html</a></p>
+        </footer>
+        <script src="./model.js"></script>
+        <script src="./view.js"></script>
+        <script src="./controller.js"></script>
+        <script src="./gn3.js"></script>
+</body>
+</html>

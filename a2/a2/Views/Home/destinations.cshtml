@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+@{
+    Layout = null;
+ }
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/destinations.css"> <!-- Link to your external CSS file -->
+    <title>My Website</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                <li><a href="@Url.Action("destinations", "Home")">destinations</a></li>
+                <li><a href="@Url.Action("tips", "Home")">tips</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Introduction of world famous scenic spots</h2>
+            <p>You can know your desired tourist destination according to the description.</p>
+        </section>
+
+        <section>
+            <h2>Featured Content</h2>
+            <div class="content-item">
+                <img src="~/img/R-C (2).jpg" alt="Image 1">
+                <h3>Content 1</h3>
+                <p>
+                    Elizabeth Tower, formerly known as Big Ben, is the Bell Tower of Westminster Palace, one of the world's famous Gothic buildings, the landmark building of London. In June 2012, Britain announced the renaming of the Bell Tower of Big Ben, a famous landmark in London, as "Elizabeth Tower".
+                    The tower of Elizabeth is a bell tower on the Thames River in London, England. It is one of the landmarks of London. The bell tower is 95 meters high, 7 meters in diameter and 13.5 tons in weight. Every 15 minutes, the Westminster bell rings. Since the construction of the Jubilee Metro Line, the tower of Elizabeth has been affected. Measurements show that the tower tilts about half a meter northwest.
+                </p>
+            </div>
+            <div class="content-item">
+                <img src="~/img/R-C (8).jpg" alt="Image 2">
+                <h3>Content 2</h3>
+                <p>The Leaning Tower of Pisa was built in August 1173 and is the free-standing clock tower of the Cathedral of Pisa, Italy, on the Square of Miracles in the north of Pisa, Tuscany, Italy.</p>
+            </div>
+        </section>
+        <div style="display: flex; justify-content: center;">
+            <section>
+                <h2>Search</h2>
+                <div style="display: flex; justify-content: center;">
+                    <form id="search-form" method="GET">
+                        <input type="text" name="query" placeholder="Search...">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </section>
+
+
+            <section>
+                <h2>Pagination</h2>
+                <div class="pagination" style="display: flex; justify-content: center;">
+                    <a href="destinations">&laquo; Previous</a>
+                    <a class="active page-link" href="destinations">1</a>
+                    <a href="second">2</a>
+                    <a href="third">3</a>
+                    <a href="second">Next &raquo;</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Contact us: <a href="mailto:info@traveladventure.com">info@traveladventure.com</a></p>
+        <p><a href="https://validator.w3.org/docs/users.html#Calling">https://validator.w3.org/docs/users.html#Calling</a>, <a href="https://jigsaw.w3.org/css-validator/manual.html">https://jigsaw.w3.org/css-validator/manual.html</a></p>
+    </footer>
+    <script src="~/JS文件/model.js"></script>
+    <script src="~/JS文件/view.js"></script>
+    <script src="~/JS文件/controller.js"></script>
+    <script src="~/JS文件/gn.js"></script>
+
+</body>
+
+</html>

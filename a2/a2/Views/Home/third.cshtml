@@ -1,0 +1,75 @@
+﻿@{ 
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="~/css/third.css">
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                <li><a href="@Url.Action("destinations", "Home")">destinations</a></li>
+                <li><a href="@Url.Action("tips", "Home")">tips</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Introduction of world famous scenic spots</h2>
+        <p>You can know your desired tourist destination according to the description.</p>
+    </section>
+
+    <section>
+        <h2>Featured Content</h2>
+        <div class="content-item">
+            <img src="~/img/R-C (6).jpg" alt="Image 1">
+            <h3>Content 1</h3>
+            <p>Founded in the summer of 1868, new Swan Castle is located in the southwest of Bavaria, Germany, adjacent to the earlier high swan castle.New Swan Castle is the symbol of Germany. It is also called Cinderella Castle because it is the prototype of Disney castle. It was built in 1869. This castle is one of the palaces of King Ludwig II of Bavaria.</p>
+        </div>
+        <div class="content-item">
+            <img src="~/img/R-C (7).jpg" alt="Image 2">
+            <h3>Content 2</h3>
+            <p>St. Andrew's Church is the headquarters of the Theatines, a Catholic religious order. According to the introduction, its interior is the second most beautiful after St. Peter's Basilica. And its dome was once the third largest in Rome, after the Pantheon and St. Peter's Basilica.</p>
+        </div>
+    </section>
+    <div style="display: flex; justify-content: center;">
+        <section>
+            <h2>Search</h2>
+            <div style="display: flex; justify-content: center;">
+                <form action="./destinations.html" method="GET">
+                    <input type="text" name="query" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <h2>Pagination</h2>
+            <div class="pagination" style="display: flex; justify-content: center;">
+                <a href="destinations">&laquo; Previous</a>
+                <a class="active page-link" href="destinations">1</a>
+                <a href="second">2</a>
+                <a href="third">3</a>
+                <a href="third">Next &raquo;</a>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>Contact us: <a href="mailto:info@traveladventure.com">info@traveladventure.com</a></p>
+        <p><a href="https://validator.w3.org/docs/users.html#Calling">https://validator.w3.org/docs/users.html#Calling</a>, <a href="https://jigsaw.w3.org/css-validator/manual.html">https://jigsaw.w3.org/css-validator/manual.html</a></p>
+    </footer>
+    <script src="./model.js"></script>
+    <script src="./view.js"></script>
+    <script src="./controller.js"></script>
+    <script src="./gn2.js"></script>
+
+
+</body>
+</html>

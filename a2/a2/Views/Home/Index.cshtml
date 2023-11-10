@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+@{
+    Layout = null;
+}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/css/index.css">
+    <script src="~/JS文件/slider.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Travel and Adventure!</title>
+    <meta name="keywords" content="Travel, Adventure, Destination, Experience">
+    <meta name="description" content="Explore the most magnificent destinations for unforgettable travel and adventure experiences">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                <li><a href="@Url.Action("destinations", "Home")">destinations</a></li>
+                <li><a href="@Url.Action("tips", "Home")">tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <section id="slider">
+            <img src="~/img/OIP-C (1).jpg" alt="Slider 1">
+            <img src="~/img/R-C (3).jpg" alt="Slider 2">
+            <img src="~/img/R-C (5).jpg" alt="Slider 3">
+            <img src="~/img/R-C (6).jpg" alt="Slider 4">
+            <img src="~/img/R-C (8).jpg" alt="Slider 5">
+    </section>
+
+    <h2>Welcome to Travel and Adventure!</h2>
+    <section class="destination-preview">
+        <h2>Featured Destinations</h2>
+        <div class="destination-card">
+            <img src="~/img/R-C (2).jpg" alt="London's Big Ben and Tower Bridge">
+            <h3>Big Ben and Thames Bridge in London</h3>
+            <p>Discover the beauty and charm of London's Big Ben and Thames Bridge. From amazing scenery to a rich cultural heritage, it's got it all.</p>
+            <a href="https://example.com/destination1">Learn More</a>
+        </div>
+        <div class="destination-card">
+            <img src="~/img/R-C (4).jpg" alt="View of Eiffel Tower from the other side of the river">
+            <h3>Great view across the Eiffel Tower</h3>
+            <p>Experience the thrill and adventure in the beauty of the Eiffel Tower across the river. It offers a variety of exciting activities for thrill-seekers of adventure.</p>
+            <a href="https://example.com/destination2">Learn More</a>
+        </div>
+    </section>
+</body>
+</html>

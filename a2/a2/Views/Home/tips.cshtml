@@ -1,0 +1,81 @@
+﻿@{ 
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tips and Advice</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="~/css/tips.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                <li><a href="@Url.Action("destinations", "Home")">destinations</a></li>
+                <li><a href="@Url.Action("tips", "Home")">tips</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <h1>Travel Tips and Advice</h1>
+        <form class="search-form" action="#" method="get">
+            <input type="text" name="search" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+        <div class="filter-bar">
+            <div class="filter-item">
+                <label for="theme">Theme:</label>
+                <select id="theme" name="theme" onchange="sortTips()">
+                    <option value="">All</option>
+                    <option value="packing">Packing</option>
+                    <option value="transportation">Transportation</option>
+                    <option value="food">Food</option>
+                </select>
+            </div>
+            <div class="filter-item">
+                <label for="sort-by">Sort by:</label>
+                <select id="sort-by" name="sort" onchange="sortTips()">
+                    <option value="date-asc">Date (oldest first)</option>
+                    <option value="date-desc">Date (newest first)</option>
+                    <option value="title-asc">Title (A-Z)</option>
+                    <option value="title-desc">Title (Z-A)</option>
+                </select>
+
+            </div>
+        </div>
+        <div class="tips-list">
+            <div class="tip-item" data-theme="packing">
+                <h2 class="tip-title">Packing Tip 1</h2>
+                <p class="tip-date">2023-11-08</p>
+            </div>
+            <div class="tip-item" data-theme="transportation">
+                <h2 class="tip-title">Transportation Tip 1</h2>
+                <p class="tip-date">2023-11-09</p>
+            </div>
+            <div class="tip-item" data-theme="food">
+                <h2 class="tip-title">Food Tip 1</h2>
+                <p class="tip-date">2023-11-10</p>
+            </div>
+            <div class="tip-item" data-theme="packing">
+                <h2 class="tip-title">Packing Tip 2</h2>
+                <p class="tip-date">2023-11-11</p>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <p>Contact us: <a href="mailto:info@traveladventure.com">info@traveladventure.com</a></p>
+        <p><a href="https://validator.w3.org/docs/users.html#Calling">https://validator.w3.org/docs/users.html#Calling</a>, <a href="https://jigsaw.w3.org/css-validator/manual.html">https://jigsaw.w3.org/css-validator/manual.html</a></p>
+    </footer>
+    <script src="~/JS文件/forth.js">
+    </script>
+</body>
+
+</html>
